@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--LightGray);
+    font-size: 1.6rem;
+}
+
+.header,
+.subscription,
+.aboutus {
+    padding: 3rem;
+
+}
+
+.header {
+        grid-area: header;
+        background-color: var(--White);
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+}
+
+.subscription {
+        grid-area: subscription; 
+        background-color: var(--Cyan);
+        background-blend-mode: darken;
+        color: var(--White);
+        font-family: 'Karla', sans-serif;
+}
+.aboutus {
+        grid-area: aboutus; 
+        background-color: var(--Cyan);
+        opacity: 0.6;
+        color: var(--White);
+        font-family: 'Karla', sans-serif;
+        
+
+}
+
+.component {
+    display: grid;
+    border: 1px solid black;
+    border-radius: 2rem;
+    overflow: hidden;
+    grid-template-columns: 30rem  30rem;
+    grid-template-areas:
+    "header header"
+    "subscription aboutus"
+}
