@@ -45,17 +45,20 @@ body {
 
 .header h1 {
   color: var(--Cyan);
+  margin-bottom: 2rem;
  
 }
 
 .header h2 {
   color:var(--BrightYellow);
   font-size: 1.4rem;
+  margin-bottom: 1rem;
   
 }
 
 .header p {
   color: var(--GrayishBlue);
+  opacity: 0.8;
 }
 
 .subscription {
@@ -64,8 +67,14 @@ body {
         background-blend-mode: darken;
         color: var(--White);
         font-family: 'Karla', sans-serif;
+       
         
       
+}
+
+.subscription .title {
+  font-size: 1.4rem;
+  opacity: 0.9;
 }
 
 .subscription .price {
@@ -80,7 +89,7 @@ body {
  margin-left: 1rem;
  font-size: 1.6rem;
  color: var(--LightGray);
- opacity: 0.6;
+ opacity: 0.4;
  
 }
 
@@ -88,14 +97,14 @@ body {
   padding: 1.2rem;
   background-color: var(--BrightYellow);
   text-align: center;
-  border-radius: 3%;
-  
+  border-radius: .5rem;
+  box-shadow: 0 6px 6px -4px rgb(0 0 0 / 0.1);
   
 }
 
 .subscription .description {
   margin-bottom: 2rem;
-  font-weight: 200;
+  opacity: 0.8;
 }
 .aboutus {
         grid-area: aboutus; 
@@ -103,6 +112,7 @@ body {
         opacity: 0.6;
         color: var(--White);
         font-family: 'Karla', sans-serif;
+        font-size: 1.4rem;
         
 
 }
@@ -112,16 +122,31 @@ body {
 }
 .aboutus p {
   font-size: 1.4rem;
+  opacity: 0.8;
 }
 
-
 .component {
-    display: grid;
-    border: 1px solid black;
-    border-radius: 1rem;
-    overflow: hidden;
-    grid-template-columns: 30rem  30rem;
-    grid-template-areas:
-    "header header"
-    "subscription aboutus"
+  display: grid;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+  grid-template-columns: 30rem  30rem;
+  grid-template-areas:
+  "header header"
+  "subscription aboutus"
+}
+@media only screen and (max-width: 620px)  {
+
+  .component {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 1rem; 
+  }
+  .header,
+  .subscription,
+  .aboutus
+   {
+    width: 34.3rem;
+  }
 }
