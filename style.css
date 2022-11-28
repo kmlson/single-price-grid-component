@@ -40,6 +40,22 @@ body {
         background-color: var(--White);
         font-family: 'Karla', sans-serif;
         font-weight: 400;
+        
+}
+
+.header h1 {
+  color: var(--Cyan);
+ 
+}
+
+.header h2 {
+  color:var(--BrightYellow);
+  font-size: 1.4rem;
+  
+}
+
+.header p {
+  color: var(--GrayishBlue);
 }
 
 .subscription {
@@ -48,6 +64,38 @@ body {
         background-blend-mode: darken;
         color: var(--White);
         font-family: 'Karla', sans-serif;
+        
+      
+}
+
+.subscription .price {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding:  1rem 0;
+}
+
+.subscription .center {
+ margin-left: 1rem;
+ font-size: 1.6rem;
+ color: var(--LightGray);
+ opacity: 0.6;
+ 
+}
+
+.subscription .button {
+  padding: 1.2rem;
+  background-color: var(--BrightYellow);
+  text-align: center;
+  border-radius: 3%;
+  
+  
+}
+
+.subscription .description {
+  margin-bottom: 2rem;
+  font-weight: 200;
 }
 .aboutus {
         grid-area: aboutus; 
@@ -59,10 +107,18 @@ body {
 
 }
 
+.aboutus .aboutus_title {
+ margin-bottom: 1rem;
+}
+.aboutus p {
+  font-size: 1.4rem;
+}
+
+
 .component {
     display: grid;
     border: 1px solid black;
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
     grid-template-columns: 30rem  30rem;
     grid-template-areas:
